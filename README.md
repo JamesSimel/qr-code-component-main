@@ -53,15 +53,23 @@ There is also a `style-guide.md` file containing the information you'll need, su
     /* Designed by Simel */
     @import url('https://fonts.googleapis.com/css?family=Outfit');
 
+    :root {
+        --body-font: "Outfit", sans-serif;
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+    }
+
     * {
         box-sizing: border-box;
         margin: 0px;
         padding: 0px;
     }
     body{
-        font-family: Outfit;
+        font-family: var(--body-font);
         font-weight: 400, 700;
-        background-color: hsl(212, 45%, 89%);
+        background-color: var(--light-gray);
         max-width: 1440px;
         font-size: 15px;
         display: flex;
@@ -70,7 +78,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
     }
 
     #container {
-        background-color: hsl(0, 0%, 100%);
+        background-color: var(--white);
         display: flex;
         border-radius: 8px;
         flex-direction: column;
@@ -87,13 +95,13 @@ There is also a `style-guide.md` file containing the information you'll need, su
         text-indent: 0.2em;
         font-size: 21px;
         font-family: Outfit;
-
+        color: var(--dark-blue);
     }
     #container > p{
         font-weight: 590;
         margin-bottom: 8%;
         font-family: Outfit;
-        color: #5f5f5f;
+        color: var(--grayish-blue);
     }
 
     #qr-code-image{
@@ -102,35 +110,13 @@ There is also a `style-guide.md` file containing the information you'll need, su
         
     }
 
-    @media screen and (min-width: 375px) {
+    @media screen and (max-width: 1020px) {
             
-            #container {
-                max-width: 100%;
-                background-color: hsl(0, 0%, 100%);
-                display: flex;
-                border-radius: 8px;
-                flex-direction: column;
-                padding: 10px 15px;
-                text-align: center;
-                width: 90%;
-                margin-top: 30%;
+        #container {
+            margin-top: 10%;
+            width: 5rem;
 
-            }
-            #container > h2 {
-                font-weight: bold;
-                margin-bottom: 8%;
-                text-align: center;
-                text-indent: 0.2em;
-                font-size: 21px;
-                font-family: Outfit;
-            
-            }
-            #container > p{
-                font-weight: 590;
-                margin-bottom: 8%;
-                font-family: Outfit;
-            }        
-            
+        } 
     }
 ```
 
