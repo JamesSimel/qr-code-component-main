@@ -120,16 +120,13 @@ There is also a `style-guide.md` file containing the information you'll need, su
     }
 ```
 
-## I deployed the project on this sites
+## I deployed the project on:
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://genuine1.netlify.com/)
+- [Netlify](https://bestqrcode-frontend-mentor.netlify.app/)
 
 ## Got feedback for Me?
 
-I love receiving feedback! I am always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email jameskarinosimel[at]gmail[dot]com. 
+I love receiving feedback! I am always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email jameskarinosimel@gmail.com. 
 
 This challenge is completely free. Feel free to try at it at [Frontend Mentor site](https://www.frontendmentor.io).
 
